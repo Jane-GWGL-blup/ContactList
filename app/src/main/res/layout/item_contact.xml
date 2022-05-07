@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/picture_image"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_profile_song" />
+
+        <TextView
+            android:id="@+id/tvNameSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="@string/name_song"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNameSong"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="@string/song_info"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/aditional_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvInfo"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="@string/detalle"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <CheckBox
+            android:id="@+id/chkFavorite"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_toStartOf="@+id/btnPlay"
+            android:button="@drawable/checkbox_selector"
+            android:buttonTint="#BC1A1A" />
+
+        <ImageView
+            android:id="@+id/img_rock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNameSong"
+            android:layout_toEndOf="@+id/tvInfo"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_star" />
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/btnStop"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btnShare"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/ic_pause" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/ic_share" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

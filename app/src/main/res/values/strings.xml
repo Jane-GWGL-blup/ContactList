@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Song List</string>
+    <string name="name_song">Nombre de la canción</string>
+    <string name="song_info">Genero</string>
+    <string name="detalle">Hit</string>
+</resources>
